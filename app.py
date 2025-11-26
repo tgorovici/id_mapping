@@ -90,4 +90,6 @@ if uploaded:
     st.download_button(
         label="Download CSV",
         data=df.to_csv(index=False).encode("utf-8"),
-        file_name="ordered_cvat_track_list.csv"
+        file_name="ordered_cvat_track_list.csv",
+        mime="text/csv"
+    )
